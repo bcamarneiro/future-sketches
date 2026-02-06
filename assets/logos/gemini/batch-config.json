@@ -1,0 +1,61 @@
+{
+  "jobs": [
+    {
+      "type": "generate",
+      "prompt": "Minimalist logo for 'Future Sketches' company. Design a modern 'FS' monogram where the F is made of precise, clean digital lines (geometric, tech-inspired) and the S flows into hand-drawn sketch strokes. Color palette: indigo (#4F46E5) and orange (#F97316). Professional but creative. White background. Vector style with mixed precise/organic feel.",
+      "output_filename": "logo-1-fs-monogram.png",
+      "aspectRatio": "1:1",
+      "style": "professional",
+      "model": "gemini-3-pro-image-preview",
+      "resolution": "1K"
+    },
+    {
+      "type": "generate",
+      "prompt": "Logo wordmark for 'FUTURE SKETCHES' where 'FUTURE' is written in clean, modern sans-serif typography (geometric, tech-inspired) and 'SKETCHES' appears in hand-drawn, sketchbook style with organic brush strokes. Colors: indigo (#4F46E5) for FUTURE, orange (#F97316) for SKETCHES. Professional creative agency vibe. White background.",
+      "output_filename": "logo-2-wordmark-split.png",
+      "aspectRatio": "16:9",
+      "style": "professional",
+      "model": "gemini-3-pro-image-preview",
+      "resolution": "1K"
+    },
+    {
+      "type": "generate",
+      "prompt": "Abstract icon combining technology and creativity: left half shows a precise pixel grid or circuit pattern (indigo #4F46E5), right half transitions into flowing hand-drawn brush strokes and sketch marks (orange #F97316). Minimalist, balanced composition. White background. Suitable as app icon or brand mark.",
+      "output_filename": "logo-3-abstract-icon.png",
+      "aspectRatio": "1:1",
+      "style": "minimalist",
+      "model": "gemini-3-pro-image-preview",
+      "resolution": "1K"
+    },
+    {
+      "type": "generate",
+      "prompt": "Logo for 'Future Sketches': stylized pencil icon where the pencil body is made of geometric, digital elements (circuits, pixels, clean lines in indigo #4F46E5) but the pencil tip creates organic, hand-drawn sketch marks and doodles (orange #F97316). Tech meets human creativity. White background. Modern and professional.",
+      "output_filename": "logo-4-pencil-hybrid.png",
+      "aspectRatio": "1:1",
+      "style": "professional",
+      "model": "gemini-3-pro-image-preview",
+      "resolution": "1K"
+    },
+    {
+      "type": "generate",
+      "prompt": "Minimalist 'F' letter mark logo that morphs from structured digital letterform (top, precise geometric shapes in indigo #4F46E5) into loose, flowing sketch strokes (bottom, hand-drawn organic lines in orange #F97316). Represents Future Sketches brand - technology meeting human creativity. Clean, professional. White background.",
+      "output_filename": "logo-5-f-morph.png",
+      "aspectRatio": "1:1",
+      "style": "minimalist",
+      "model": "gemini-3-pro-image-preview",
+      "resolution": "1K"
+    },
+    {
+      "type": "generate",
+      "prompt": "Logo combining 'Future Sketches' text with icon: clean sans-serif 'FUTURE' in indigo (#4F46E5) next to a small square icon showing half precise grid/circuit pattern, half hand-drawn sketch lines. Below, 'sketches' in lowercase, sketchy hand-drawn style in orange (#F97316). Balanced, professional creative tech company. White background.",
+      "output_filename": "logo-6-combo-lockup.png",
+      "aspectRatio": "16:9",
+      "style": "professional",
+      "model": "gemini-3-pro-image-preview",
+      "resolution": "1K"
+    }
+  ],
+  "output_dir": "~/clawd/projects/future-sketches/assets/logos/gemini",
+  "max_concurrent": 2,
+  "timeout": 600000
+}
