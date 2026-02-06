@@ -1,41 +1,77 @@
-# Future Sketches — Branding Research Summary
-*Designer Agent — 2026-02-06*
+# Future Sketches
+
+**Future Sketches, Lda** — Consultoria, formações e serviços tech.
+
+## 🎯 Sobre
+
+Empresa de Bruno & Daniela Camarneiro focada em:
+- 💻 Consultoria de desenvolvimento
+- 🤖 Formações em AI
+- 👥 Formações em RH
+- 📚 Edição de conteúdo educativo
+- 🎓 Workshops de programação
 
 ---
 
-## 📁 Ficheiros Criados
+## 🎨 Branding Research & Development
+
+*Designer Agent — 2026-02-06*
+
+### 📁 Ficheiros Criados
 
 1. **`moodboard.md`** — Research completa de tendências 2025, análise de 100+ AI companies, referências visuais
 2. **`brand-directions.md`** — 3 propostas concretas de identidade visual com paletas, tipografia, mood
+3. **`assets/`** — Logo concepts, paletas de cores, tipografia, mockups 🆕
 
 ---
 
-## 🎯 Quick Overview
+## 🎯 Brand Directions
 
-### Proposta 1: **"Sketch Digital"** 🏆 RECOMENDADA
+### Proposta 1: **"Sketch Digital"** 🏆 ESCOLHIDA
 **Conceito:** O futuro é desenhado à mão  
 **Vibe:** Criativo, acessível, surpreendente  
-**Cores:** Electric Indigo + Sunset Orange + Sky Cyan  
-**Typo:** Rounded sans + handdrawn accents  
+**Cores:** Electric Indigo (#667eea) + Royal Purple (#764ba2) + Neon Pink (#f093fb)  
+**Typo:** Space Grotesk + Inter + JetBrains Mono  
 **Por quê:** Abraça perfeitamente "Future Sketches", único no mercado, equilibra tech + human
-
----
 
 ### Proposta 2: **"Organic Tech"**
 **Conceito:** Tecnologia que evolui naturalmente  
 **Vibe:** Sofisticado, adaptável, inteligente  
 **Cores:** Deep Teal + Soft Coral + Electric Violet  
-**Typo:** Geometric com curves + refined serif  
-**Por quê:** Maximum corporate appeal, sofisticação premium, timeless
-
----
 
 ### Proposta 3: **"Geometric Future"**
 **Conceito:** Estrutura que impulsiona criatividade  
 **Vibe:** Confiante, progressivo, energético  
 **Cores:** Cosmic Navy + Neon Amber + Electric Blue  
-**Typo:** Bold geometric sans + condensed  
-**Por quê:** Maximum tech credibility, bold, trending
+
+---
+
+## 🖼️ Visual Assets 🆕
+
+### Logo Concepts (4 variações)
+- **Concept 1:** Abstract Sketch Lines com digital grid overlay
+- **Concept 2:** Minimalist Pencil + Code brackets
+- **Concept 3:** Geometric Grid Transform (grid → organic sketch)
+- **Concept 4:** Hand-drawn meets Digital Wireframe
+
+📂 Ver `assets/logos/` para os ficheiros SVG
+
+### Color Palette
+Paleta completa com swatches interativos, gradientes e guidelines de utilização.
+
+📂 Abrir `assets/colors/color-palette.html` no browser
+
+### Typography System
+Showcase completo das 3 fonts com exemplos aplicados, weight scales, e regras de uso.
+
+📂 Abrir `assets/fonts/typography-showcase.html` no browser
+
+### Business Card Mockup
+Design profissional de cartões de visita (frente/verso) com apresentação stacked.
+
+📂 Abrir `assets/mockups/business-card.html` no browser
+
+**Ver `assets/README.md` para documentação completa dos assets.**
 
 ---
 
@@ -62,98 +98,85 @@
 
 ---
 
-## 🎨 Recomendação Final
-
-### **Escolher: Proposta 1 "Sketch Digital"**
-
-**Razões:**
-1. Nome "Future **Sketches**" é asset único — esta proposta usa-o perfeitamente
-2. Diferenciação máxima — ninguém faz tech + handdrawn assim
-3. Storytelling natural — sketch → digital = metáfora para o trabalho
-4. Equilibra **Criativo + Tech-forward + Human** em perfeito balanço
-5. Workshop & formações friendly
-
-**Trade-offs:**
-- Pode ser "too playful" para ultra-corporates (mas pode ajustar polish level)
-- Requer execução consistente de handdrawn elements (não amadora)
-
----
-
 ## 🚀 Next Steps
 
-### Se aprovado:
-1. **Desenvolver logo concepts** (3-4 variações da direção escolhida)
-2. **Mockups de aplicações:**
-   - Business card
-   - Website hero section
-   - Presentation slide template
-   - Workshop materials
-3. **Motion tests** — Sketch→Digital transitions
-4. **Brand guidelines** (cores, typo, usage rules)
+### Completed ✅
+- Research de tendências 2025
+- Análise de 100+ AI companies
+- 3 propostas de brand directions
+- Logo concepts (4 variações)
+- Color palette showcase
+- Typography system
+- Business card mockup
 
-### Timing estimado:
-- Logo concepts: 2-3 dias
-- Mockups + motion tests: 3-4 dias
-- Guidelines: 1-2 dias
-- **Total:** ~1-1.5 semanas para package completo
+### To Do 🎯
+1. **Refine logo** baseado em feedback
+2. **Website mockups** (hero section, landing page)
+3. **Presentation templates** para workshops
+4. **Motion tests** — Sketch→Digital transitions
+5. **Brand guidelines document** (completo)
+
+### Timing estimado para finalização:
+- Logo refinement: 1-2 dias
+- Website mockups: 2-3 dias
+- Templates + motion: 2-3 dias
+- Guidelines doc: 1-2 dias
+- **Total:** ~1-1.5 semanas
 
 ---
 
 ## 💬 Para Review
 
-**Perguntas para o Bruno:**
+**Feedback necessário do Bruno:**
 
-1. **Qual direção ressoa mais?**
-   - Sketch Digital (recomendado)
-   - Organic Tech
-   - Geometric Future
-   - Mix de elementos?
-
-2. **Target principal:**
-   - Mais startups/scale-ups (→ Sketch Digital)
-   - Mais enterprise/corporate (→ Organic Tech)
-   - Mix (→ versão adaptável)
-
-3. **Mood preference:**
-   - Maximum warmth & creativity
-   - Balance sofisticação & approachability
-   - Maximum tech credibility
-
-4. **Risk tolerance:**
-   - Alto (vamos fazer algo único)
-   - Médio (destaca mas não alienates)
-   - Baixo (safe but distinctive)
+1. **Logo concepts** — Qual variação ressoa mais? Ajustes necessários?
+2. **Colors** — Paleta aprovada ou ajustes?
+3. **Typography** — System funciona para todos os use cases?
+4. **Business card** — Design aprovado?
 
 ---
 
-## 📊 Files Structure
+## 📊 Repo Structure
 
 ```
 ~/clawd/projects/future-sketches/
-├── README.md (este ficheiro)
-├── moodboard.md (research completa)
-├── brand-directions.md (3 propostas detalhadas)
-└── future-sketches-branding.md (brief original)
+├── README.md                       # Este ficheiro
+├── moodboard.md                    # Research completa
+├── brand-directions.md             # 3 propostas detalhadas
+└── assets/
+    ├── README.md                   # Documentação dos assets
+    ├── logos/
+    │   ├── logo-concept-1.svg
+    │   ├── logo-concept-2.svg
+    │   ├── logo-concept-3.svg
+    │   └── logo-concept-4.svg
+    ├── colors/
+    │   └── color-palette.html
+    ├── fonts/
+    │   └── typography-showcase.html
+    └── mockups/
+        └── business-card.html
 ```
 
 ---
 
 ## 🎯 TL;DR
 
-**Done:**
-✅ Research de tendências 2025 (Branding Journal, Envato, Ebaq Design)  
-✅ Análise de 100+ AI companies & tech consultancies  
-✅ Moodboard com referências visuais categorizadas  
-✅ 3 propostas concretas com paletas, typo, mood, aplicações  
+**Direção escolhida:** "Sketch Digital"
 
-**Recomendação:**
-🏆 Proposta 1 "Sketch Digital" — Abraça o nome, único, equilibrado
+**Assets criados:**
+✅ 4 logo concepts (SVG)  
+✅ Color palette interativa  
+✅ Typography showcase  
+✅ Business card mockup  
+
+**Vibe:** Criativo • Tech-forward • Human
 
 **Aguarda:**
-💬 Feedback do Bruno para desenvolver direção escolhida
+💬 Feedback do Bruno para refinement & próximos passos
 
 ---
 
 *Criado pelo Designer Agent*  
 *Research baseada em 2025 branding trends + análise competitiva*  
-*Ready para próxima fase: logo development* 🎨✨
+*Assets powered by SVG + HTML/CSS* 🎨✨
