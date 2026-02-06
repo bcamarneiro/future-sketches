@@ -1,0 +1,39 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Concept 1: Abstract Sketch Lines -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#0a0e27"/>
+  
+  <!-- Sketch-style F -->
+  <path d="M 80 100 L 200 100 M 80 100 L 80 300 M 80 200 L 180 200" 
+        stroke="url(#grad1)" stroke-width="8" fill="none" 
+        stroke-linecap="round" stroke-linejoin="round"
+        opacity="0.9"/>
+  
+  <!-- Digital grid overlay -->
+  <g opacity="0.3">
+    <line x1="90" y1="110" x2="190" y2="110" stroke="#667eea" stroke-width="1"/>
+    <line x1="90" y1="190" x2="170" y2="190" stroke="#667eea" stroke-width="1"/>
+    <line x1="90" y1="290" x2="90" y2="110" stroke="#667eea" stroke-width="1"/>
+  </g>
+  
+  <!-- S shape -->
+  <path d="M 240 120 Q 280 100 320 120 Q 340 140 320 160 Q 280 180 240 160 Q 220 180 240 200 Q 280 220 320 200 Q 340 220 320 260 Q 280 280 240 260" 
+        stroke="url(#grad1)" stroke-width="8" fill="none" 
+        stroke-linecap="round" opacity="0.9"/>
+  
+  <!-- Glitch effect dots -->
+  <circle cx="85" cy="105" r="3" fill="#667eea" opacity="0.8"/>
+  <circle cx="195" cy="105" r="3" fill="#764ba2" opacity="0.8"/>
+  <circle cx="245" cy="125" r="3" fill="#667eea" opacity="0.8"/>
+  
+  <!-- Text -->
+  <text x="200" y="350" font-family="'Courier New', monospace" font-size="32" 
+        fill="#667eea" text-anchor="middle" letter-spacing="8">FUTURE SKETCHES</text>
+</svg>

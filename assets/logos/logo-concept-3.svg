@@ -1,0 +1,50 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Concept 3: Geometric Grid Transform -->
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="400" height="400" fill="#0a0e27"/>
+  
+  <!-- Grid to sketch transformation -->
+  <g filter="url(#glow)">
+    <!-- Left side: rigid grid -->
+    <rect x="80" y="120" width="40" height="40" fill="none" stroke="#667eea" stroke-width="2"/>
+    <rect x="80" y="165" width="40" height="40" fill="none" stroke="#667eea" stroke-width="2"/>
+    <rect x="125" y="120" width="40" height="40" fill="none" stroke="#667eea" stroke-width="2"/>
+    <rect x="125" y="165" width="40" height="40" fill="none" stroke="#667eea" stroke-width="2"/>
+    
+    <!-- Transformation arrow -->
+    <path d="M 180 170 L 220 170" stroke="url(#grad3)" stroke-width="4" 
+          stroke-linecap="round" opacity="0.6"/>
+    <polygon points="220,170 210,165 210,175" fill="url(#grad3)" opacity="0.6"/>
+    
+    <!-- Right side: organic sketch -->
+    <path d="M 240 125 Q 260 120 280 125 L 285 145 Q 282 165 280 170 L 265 172 Q 250 170 240 165 Z" 
+          fill="none" stroke="#764ba2" stroke-width="2.5" opacity="0.9"/>
+    <path d="M 245 180 Q 260 178 275 182 Q 282 195 280 210 L 265 215 Q 248 213 242 205 Z" 
+          fill="none" stroke="#f093fb" stroke-width="2.5" opacity="0.9"/>
+    
+    <!-- Particle flow -->
+    <circle cx="200" cy="150" r="2" fill="#667eea" opacity="0.8"/>
+    <circle cx="205" cy="165" r="2" fill="#764ba2" opacity="0.8"/>
+    <circle cx="210" cy="175" r="2" fill="#f093fb" opacity="0.8"/>
+  </g>
+  
+  <!-- Text with glitch effect -->
+  <text x="200" y="330" font-family="'Menlo', 'Monaco', monospace" font-size="26" 
+        fill="#667eea" text-anchor="middle" letter-spacing="6">FUTURE</text>
+  <text x="200" y="360" font-family="'Menlo', 'Monaco', monospace" font-size="26" 
+        fill="#764ba2" text-anchor="middle" letter-spacing="6">SKETCHES</text>
+</svg>

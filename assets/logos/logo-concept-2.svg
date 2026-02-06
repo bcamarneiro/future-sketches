@@ -1,0 +1,40 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Concept 2: Minimalist Pencil + Code -->
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="#0a0e27"/>
+  
+  <!-- Pencil shape -->
+  <g transform="translate(150, 80) rotate(45)">
+    <!-- Body -->
+    <rect x="0" y="0" width="120" height="20" fill="url(#grad2)" rx="2"/>
+    <!-- Tip -->
+    <polygon points="120,0 140,10 120,20" fill="#e8d5b5"/>
+    <polygon points="120,5 140,10 120,15" fill="#333"/>
+    <!-- Eraser -->
+    <rect x="-15" y="0" width="15" height="20" fill="#ff6b9d" rx="2"/>
+    <rect x="-17" y="8" width="2" height="4" fill="#333" opacity="0.3"/>
+  </g>
+  
+  <!-- Code brackets -->
+  <g transform="translate(100, 240)">
+    <path d="M 0 0 L -20 0 L -20 40 L 0 40" stroke="#667eea" stroke-width="6" 
+          fill="none" stroke-linecap="round"/>
+    <path d="M 200 0 L 220 0 L 220 40 L 200 40" stroke="#764ba2" stroke-width="6" 
+          fill="none" stroke-linecap="round"/>
+    <!-- Code dots -->
+    <circle cx="40" cy="20" r="4" fill="#667eea"/>
+    <circle cx="100" cy="20" r="4" fill="#764ba2"/>
+    <circle cx="160" cy="20" r="4" fill="#667eea"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="200" y="350" font-family="'SF Pro Display', 'Helvetica', sans-serif" 
+        font-size="28" font-weight="300" fill="#667eea" text-anchor="middle" 
+        letter-spacing="4">FUTURE SKETCHES</text>
+</svg>

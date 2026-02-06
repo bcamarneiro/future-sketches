@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Sketches - Business Card Mockup</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .container {
+            max-width: 1400px;
+            width: 100%;
+        }
+        
+        .title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .title h1 {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        
+        .title p {
+            font-size: 18px;
+            color: #94a3b8;
+            font-weight: 300;
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+        
+        /* Business Card Container */
+        .card-container {
+            perspective: 1000px;
+        }
+        
+        .card-label {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+        
+        /* Card Dimensions: Standard business card ratio (3.5" x 2" = 1050px x 600px at 300dpi) */
+        .business-card {
+            width: 100%;
+            max-width: 700px;
+            aspect-ratio: 1.75 / 1;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .business-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        /* Front Side - Dark */
+        .card-front {
+            background: #0a0e27;
+            padding: 48px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+        
+        /* Background Pattern */
+        .card-front::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            transform: translate(30%, -30%);
+        }
+        
+        .card-front::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(118, 75, 162, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            transform: translate(-30%, 30%);
+        }
+        
+        /* Logo Area */
+        .logo-area {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+        }
+        
+        .logo-text {
+            font-size: 36px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: -1px;
+        }
+        
+        .brand-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #e0e7ff;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            color: #667eea;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        
+        /* Contact Info */
+        .contact-info {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .contact-item {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: #94a3b8;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .contact-icon {
+            width: 6px;
+            height: 6px;
+            background: #667eea;
+            border-radius: 50%;
+        }
+        
+        /* Back Side - Light Gradient */
+        .card-back {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            padding: 48px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-back::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M 10 10 L 30 10 M 10 10 L 10 30 M 10 20 L 25 20" stroke="rgba(255,255,255,0.1)" stroke-width="2" fill="none"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .person-info {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .person-name {
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
+        
+        .person-title {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 400;
+            margin-bottom: 4px;
+        }
+        
+        .person-subtitle {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+        }
+        
+        .qr-area {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        
+        .qr-code {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #0a0e27;
+            font-family: 'JetBrains Mono', monospace;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .social-links {
+            text-align: right;
+        }
+        
+        .social-item {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 6px;
+        }
+        
+        /* Stacked View */
+        .stacked-view {
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .stacked-container {
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+            height: 500px;
+        }
+        
+        .stacked-card {
+            position: absolute;
+            width: 100%;
+            aspect-ratio: 1.75 / 1;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .stacked-card:nth-child(1) {
+            top: 0;
+            left: 0;
+            transform: rotate(-3deg);
+            z-index: 1;
+        }
+        
+        .stacked-card:nth-child(2) {
+            top: 20px;
+            left: 20px;
+            transform: rotate(2deg);
+            z-index: 2;
+        }
+        
+        @media (max-width: 1200px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Business Card Design</h1>
+            <p>Future Sketches · Professional Identity</p>
+        </div>
+        
+        <div class="cards-grid">
+            <!-- Front Side -->
+            <div class="card-container">
+                <div class="card-label">Front Side</div>
+                <div class="business-card card-front">
+                    <div class="logo-area">
+                        <div class="logo">
+                            <span class="logo-text">FS</span>
+                        </div>
+                        <div class="brand-name">FUTURE SKETCHES</div>
+                        <div class="tagline">DIGITAL DESIGN STUDIO</div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon"></span>
+                            <span>hello@futuresketches.io</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon"></span>
+                            <span>+351 XXX XXX XXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon"></span>
+                            <span>futuresketches.io</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Back Side -->
+            <div class="card-container">
+                <div class="card-label">Back Side</div>
+                <div class="business-card card-back">
+                    <div class="person-info">
+                        <div class="person-name">Bruno Camarneiro</div>
+                        <div class="person-title">Founder & Creative Director</div>
+                        <div class="person-subtitle">"Sketching tomorrow's ideas today"</div>
+                    </div>
+                    
+                    <div class="qr-area">
+                        <div class="qr-code">
+                            [QR CODE]<br>
+                            Portfolio
+                        </div>
+                        <div class="social-links">
+                            <div class="social-item">@futuresketches</div>
+                            <div class="social-item">github.com/bcamarneiro</div>
+                            <div class="social-item">linkedin.com/in/bcamarneiro</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stacked Presentation -->
+        <div class="stacked-view">
+            <div class="card-label">Stacked Presentation</div>
+            <div class="stacked-container">
+                <div class="stacked-card card-back">
+                    <div style="padding: 48px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div class="person-info">
+                            <div class="person-name">Bruno Camarneiro</div>
+                            <div class="person-title">Founder & Creative Director</div>
+                        </div>
+                        <div class="qr-area">
+                            <div class="qr-code">[QR]</div>
+                            <div class="social-links">
+                                <div class="social-item">@futuresketches</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stacked-card card-front">
+                    <div style="padding: 48px; height: 100%; display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+                        <div style="position: absolute; top: 0; right: 0; width: 400px; height: 400px; background: radial-gradient(circle, rgba(102, 126, 234, 0.15) 0%, transparent 70%); border-radius: 50%; transform: translate(30%, -30%);"></div>
+                        <div class="logo-area">
+                            <div class="logo">
+                                <span class="logo-text">FS</span>
+                            </div>
+                            <div class="brand-name">FUTURE SKETCHES</div>
+                            <div class="tagline">DIGITAL DESIGN STUDIO</div>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon"></span>
+                                <span>hello@futuresketches.io</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

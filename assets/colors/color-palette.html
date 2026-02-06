@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Sketches - Color Palette</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #0a0e27;
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #e0e7ff;
+            padding: 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 60px;
+            font-weight: 300;
+        }
+        
+        .section {
+            margin-bottom: 80px;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 32px;
+            color: #667eea;
+        }
+        
+        .colors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        
+        .color-card {
+            background: #1e293b;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .color-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(102, 126, 234, 0.2);
+        }
+        
+        .color-swatch {
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .color-info {
+            padding: 20px;
+        }
+        
+        .color-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #e0e7ff;
+        }
+        
+        .color-values {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .color-value {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #94a3b8;
+            font-family: 'Menlo', 'Monaco', monospace;
+        }
+        
+        .value-label {
+            font-weight: 600;
+            color: #64748b;
+        }
+        
+        .gradient-demo {
+            height: 200px;
+            border-radius: 16px;
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .usage-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        
+        .usage-card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 24px;
+        }
+        
+        .usage-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #667eea;
+        }
+        
+        .usage-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Future Sketches</h1>
+        <p class="subtitle">Color Palette · Sketch Digital Direction</p>
+        
+        <!-- Primary Colors -->
+        <div class="section">
+            <h2 class="section-title">🎨 Primary Colors</h2>
+            <div class="colors-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #667eea;">
+                        PRIMARY
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Electric Indigo</div>
+                        <div class="color-values">
+                            <div class="color-value">
+                                <span class="value-label">HEX</span>
+                                <span>#667eea</span>
+                            </div>
+                            <div class="color-value">
+                                <span class="value-label">RGB</span>
+                                <span>102, 126, 234</span>
+                            </div>
+                            <div class="color-value">
+                                <span class="value-label">HSL</span>
+                                <span>229°, 76%, 66%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #764ba2;">
+                        SECONDARY
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Royal Purple</div>
+                        <div class="color-values">
+                            <div class="color-value">
+                                <span class="value-label">HEX</span>
+                                <span>#764ba2</span>
+                            </div>
+                            <div class="color-value">
+                                <span class="value-label">RGB</span>
+                                <span>118, 75, 162</span>
+                            </div>
+                            <div class="color-value">
+                                <span class="value-label">HSL</span>
+                                <span>270°, 37%, 46%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #f093fb;">
+                        ACCENT
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Neon Pink</div>
+                        <div class="color-values">
+                            <div class="color-value">
+                                <span class="value-label">HEX</span>
+                                <span>#f093fb</span>
+                            </div>
+                            <div class="color-value">
+                                <span class="value-label">RGB</span>
+                                <span>240, 147, 251</span>
+                            </div>
+                            <div class="color-value">
+                                <span class="value-label">HSL</span>
+                                <span>294°, 93%, 78%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gradient Examples -->
+            <div class="gradient-demo" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                Primary Gradient
+            </div>
+            
+            <div class="gradient-demo" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);">
+                Full Spectrum
+            </div>
+        </div>
+        
+        <!-- Neutral Colors -->
+        <div class="section">
+            <h2 class="section-title">⚫ Neutral Colors</h2>
+            <div class="colors-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #0a0e27;">
+                        BACKGROUND
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Deep Space</div>
+                        <div class="color-values">
+                            <div class="color-value">
+                                <span class="value-label">HEX</span>
+                                <span>#0a0e27</span>
+                            </div>
+                            <div class="color-value">
+                                <span class="value-label">RGB</span>
+                                <span>10, 14, 39</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #1e293b;">
+                        SURFACE
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Slate Dark</div>
+                        <div class="color-values">
+                            <div class="color-value">
+                                <span class="value-label">HEX</span>
+                                <span>#1e293b</span>
+                            </div>
+                            <div class="color-value">
+                                <span class="value-label">RGB</span>
+                                <span>30, 41, 59</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #e0e7ff; color: #0a0e27;">
+                        TEXT
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Frost White</div>
+                        <div class="color-values">
+                            <div class="color-value">
+                                <span class="value-label">HEX</span>
+                                <span>#e0e7ff</span>
+                            </div>
+                            <div class="color-value">
+                                <span class="value-label">RGB</span>
+                                <span>224, 231, 255</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #94a3b8;">
+                        MUTED
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Slate Gray</div>
+                        <div class="color-values">
+                            <div class="color-value">
+                                <span class="value-label">HEX</span>
+                                <span>#94a3b8</span>
+                            </div>
+                            <div class="color-value">
+                                <span class="value-label">RGB</span>
+                                <span>148, 163, 184</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Usage Examples -->
+        <div class="section">
+            <h2 class="section-title">💡 Usage Guidelines</h2>
+            <div class="usage-examples">
+                <div class="usage-card" style="border-left: 4px solid #667eea;">
+                    <div class="usage-title">Primary Actions</div>
+                    <div class="usage-text">
+                        Use Electric Indigo (#667eea) for primary CTAs, links, and interactive elements. Creates strong focus points.
+                    </div>
+                </div>
+                
+                <div class="usage-card" style="border-left: 4px solid #764ba2;">
+                    <div class="usage-title">Brand Elements</div>
+                    <div class="usage-text">
+                        Royal Purple (#764ba2) for logos, headings, and brand moments. Provides depth and sophistication.
+                    </div>
+                </div>
+                
+                <div class="usage-card" style="border-left: 4px solid #f093fb;">
+                    <div class="usage-title">Highlights & Energy</div>
+                    <div class="usage-text">
+                        Neon Pink (#f093fb) sparingly for emphasis, hover states, and creative flourishes. Adds playful energy.
+                    </div>
+                </div>
+                
+                <div class="usage-card" style="border-left: 4px solid #0a0e27;">
+                    <div class="usage-title">Background & Depth</div>
+                    <div class="usage-text">
+                        Deep Space (#0a0e27) as primary background. Creates professional, focused environment with excellent contrast.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

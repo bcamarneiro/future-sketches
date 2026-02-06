@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Sketches - Typography</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #0a0e27;
+            color: #e0e7ff;
+            padding: 60px 40px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .hero {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 72px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+            letter-spacing: -2px;
+        }
+        
+        .hero-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            color: #94a3b8;
+            letter-spacing: 1px;
+        }
+        
+        /* Font Sections */
+        .font-section {
+            background: #1e293b;
+            border-radius: 24px;
+            padding: 48px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+        
+        .font-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+        }
+        
+        .font-name {
+            font-size: 32px;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .font-role {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            color: #764ba2;
+            background: rgba(118, 75, 162, 0.1);
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+        
+        /* Space Grotesk Examples */
+        .space-grotesk-display {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: #e0e7ff;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+        
+        .space-grotesk-heading {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            color: #cbd5e1;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+        
+        .space-grotesk-subhead {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            color: #94a3b8;
+            margin-bottom: 32px;
+        }
+        
+        /* Inter Examples */
+        .inter-body {
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #cbd5e1;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+        
+        .inter-small {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #94a3b8;
+            line-height: 1.6;
+        }
+        
+        .inter-bold {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #e0e7ff;
+        }
+        
+        /* JetBrains Mono Examples */
+        .jetbrains-code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 16px;
+            font-weight: 400;
+            color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border-left: 4px solid #667eea;
+            line-height: 1.6;
+        }
+        
+        .jetbrains-inline {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 600;
+            color: #f093fb;
+            background: rgba(240, 147, 251, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        
+        /* Weight Scale */
+        .weight-scale {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        
+        .weight-card {
+            background: rgba(102, 126, 234, 0.05);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+        
+        .weight-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Application Examples */
+        .app-example {
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 16px;
+            padding: 32px;
+            margin-top: 32px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+        }
+        
+        .mockup-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        
+        .mockup-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #667eea;
+        }
+        
+        .button-example {
+            display: inline-block;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-right: 16px;
+            margin-bottom: 16px;
+            transition: transform 0.2s ease;
+        }
+        
+        .button-example:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1 class="hero-title">Typography System</h1>
+            <p class="hero-subtitle">FUTURE SKETCHES · SKETCH DIGITAL</p>
+        </div>
+        
+        <!-- Space Grotesk -->
+        <div class="font-section">
+            <div class="font-header">
+                <h2 class="font-name">Space Grotesk</h2>
+                <span class="font-role">PRIMARY · DISPLAY & HEADINGS</span>
+            </div>
+            
+            <div class="space-grotesk-display">
+                Building the Future, One Sketch at a Time
+            </div>
+            
+            <div class="space-grotesk-heading">
+                Modern Geometric Sans-Serif
+            </div>
+            
+            <p class="space-grotesk-subhead">
+                Perfect for headlines, hero text, and brand moments. Strong character with technical edge.
+            </p>
+            
+            <div class="weight-scale">
+                <div class="weight-card">
+                    <div class="weight-label">Light · 300</div>
+                    <div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 300;">
+                        Minimal & Clean
+                    </div>
+                </div>
+                <div class="weight-card">
+                    <div class="weight-label">Regular · 400</div>
+                    <div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 400;">
+                        Balanced Form
+                    </div>
+                </div>
+                <div class="weight-card">
+                    <div class="weight-label">Semibold · 600</div>
+                    <div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 600;">
+                        Strong Impact
+                    </div>
+                </div>
+                <div class="weight-card">
+                    <div class="weight-label">Bold · 700</div>
+                    <div style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700;">
+                        Maximum Bold
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Inter -->
+        <div class="font-section">
+            <div class="font-header">
+                <h2 class="font-name">Inter</h2>
+                <span class="font-role">SECONDARY · BODY TEXT & UI</span>
+            </div>
+            
+            <p class="inter-body">
+                Inter is an optimized typeface designed for computer screens. It features a tall x-height for excellent legibility at small sizes, plus exceptional clarity across all weights. Perfect for body text, captions, and interface elements.
+            </p>
+            
+            <p class="inter-body">
+                <span class="inter-bold">Why Inter?</span> It maintains readability even in challenging conditions—low resolution, poor lighting, or motion. The letterforms are carefully crafted to reduce eye strain during long reading sessions.
+            </p>
+            
+            <p class="inter-small">
+                Small text example: This demonstrates Inter's exceptional clarity even at reduced sizes. Notice how each letter remains distinct and readable. ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789
+            </p>
+            
+            <div class="weight-scale">
+                <div class="weight-card">
+                    <div class="weight-label">Light · 300</div>
+                    <div style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 300;">
+                        Elegant & Airy
+                    </div>
+                </div>
+                <div class="weight-card">
+                    <div class="weight-label">Regular · 400</div>
+                    <div style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 400;">
+                        Standard Body
+                    </div>
+                </div>
+                <div class="weight-card">
+                    <div class="weight-label">Semibold · 600</div>
+                    <div style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600;">
+                        Emphasis
+                    </div>
+                </div>
+                <div class="weight-card">
+                    <div class="weight-label">Bold · 700</div>
+                    <div style="font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 700;">
+                        Strong Weight
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- JetBrains Mono -->
+        <div class="font-section">
+            <div class="font-header">
+                <h2 class="font-name">JetBrains Mono</h2>
+                <span class="font-role">MONOSPACE · CODE & TECHNICAL</span>
+            </div>
+            
+            <div class="jetbrains-code">
+const futureSketches = {<br>
+&nbsp;&nbsp;mission: "Transform ideas into reality",<br>
+&nbsp;&nbsp;tools: ["design", "code", "creativity"],<br>
+&nbsp;&nbsp;approach: "sketch-first, iterate-fast"<br>
+};<br>
+<br>
+export default futureSketches;
+            </div>
+            
+            <p class="inter-body">
+                Use JetBrains Mono for code snippets, technical labels, and anywhere you need monospaced clarity. Inline usage: <span class="jetbrains-inline">npm install future-sketches</span>
+            </p>
+            
+            <div class="weight-scale">
+                <div class="weight-card">
+                    <div class="weight-label">Regular · 400</div>
+                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 400;">
+                        console.log()
+                    </div>
+                </div>
+                <div class="weight-card">
+                    <div class="weight-label">Semibold · 600</div>
+                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 600;">
+                        const data = []
+                    </div>
+                </div>
+                <div class="weight-card">
+                    <div class="weight-label">Bold · 700</div>
+                    <div style="font-family: 'JetBrains Mono', monospace; font-size: 16px; font-weight: 700;">
+                        ERROR: 404
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Real-World Application -->
+        <div class="font-section">
+            <div class="font-header">
+                <h2 class="font-name">Real-World Application</h2>
+                <span class="font-role">TYPOGRAPHY IN CONTEXT</span>
+            </div>
+            
+            <div class="app-example">
+                <div class="mockup-header">
+                    <div class="mockup-dot"></div>
+                    <div class="mockup-dot" style="background: #764ba2;"></div>
+                    <div class="mockup-dot" style="background: #f093fb;"></div>
+                </div>
+                
+                <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 42px; font-weight: 700; color: #e0e7ff; margin-bottom: 16px;">
+                    Welcome to Future Sketches
+                </h3>
+                
+                <p style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 400; color: #94a3b8; margin-bottom: 32px;">
+                    Transform your ideas into digital reality
+                </p>
+                
+                <p class="inter-body">
+                    We combine the raw energy of hand-drawn sketches with cutting-edge digital tools. Every project starts with a concept, evolves through iteration, and launches as something extraordinary.
+                </p>
+                
+                <div style="margin: 32px 0;">
+                    <span class="button-example" style="font-family: 'Space Grotesk', sans-serif;">
+                        Start Creating
+                    </span>
+                    <span class="button-example" style="font-family: 'Space Grotesk', sans-serif; background: transparent; border: 2px solid #667eea;">
+                        View Portfolio
+                    </span>
+                </div>
+                
+                <p class="inter-small">
+                    Join <span class="jetbrains-inline">1,000+</span> creators building the future
+                </p>
+            </div>
+        </div>
+        
+        <!-- Typography Rules -->
+        <div class="font-section">
+            <div class="font-header">
+                <h2 class="font-name">Typography Rules</h2>
+                <span class="font-role">BEST PRACTICES</span>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                <div style="background: rgba(102, 126, 234, 0.05); padding: 24px; border-radius: 12px;">
+                    <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600; color: #667eea; margin-bottom: 12px;">
+                        ✅ DO
+                    </h4>
+                    <ul style="font-family: 'Inter', sans-serif; font-size: 15px; color: #cbd5e1; line-height: 1.8; list-style: none;">
+                        <li>• Use Space Grotesk for all headings</li>
+                        <li>• Keep body text at 16-18px minimum</li>
+                        <li>• Maintain 1.6-1.8 line height for readability</li>
+                        <li>• Use JetBrains Mono for code only</li>
+                        <li>• Limit to 60-80 characters per line</li>
+                    </ul>
+                </div>
+                
+                <div style="background: rgba(240, 147, 251, 0.05); padding: 24px; border-radius: 12px;">
+                    <h4 style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 600; color: #f093fb; margin-bottom: 12px;">
+                        ❌ DON'T
+                    </h4>
+                    <ul style="font-family: 'Inter', sans-serif; font-size: 15px; color: #cbd5e1; line-height: 1.8; list-style: none;">
+                        <li>• Mix more than 3 font families</li>
+                        <li>• Use script fonts for body text</li>
+                        <li>• Set text smaller than 14px</li>
+                        <li>• Use all caps for long text</li>
+                        <li>• Stretch or distort letterforms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

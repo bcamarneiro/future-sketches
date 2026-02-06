@@ -1,0 +1,50 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Concept 4: Hand-drawn meets Digital Wireframe -->
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="sketch">
+      <feTurbulence baseFrequency="0.05" numOctaves="2" result="turbulence"/>
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="2" />
+    </filter>
+  </defs>
+  
+  <rect width="400" height="400" fill="#0a0e27"/>
+  
+  <!-- Wireframe base -->
+  <circle cx="200" cy="180" r="80" fill="none" stroke="#667eea" 
+          stroke-width="1.5" opacity="0.3" stroke-dasharray="5,5"/>
+  
+  <!-- Hand-drawn circle overlay -->
+  <path d="M 200 100 Q 240 105 265 130 Q 285 160 280 190 Q 275 220 250 245 Q 220 270 190 268 Q 155 265 130 240 Q 110 210 115 180 Q 118 150 145 125 Q 170 105 200 100" 
+        fill="none" stroke="url(#grad4)" stroke-width="4" 
+        stroke-linecap="round" opacity="0.9"/>
+  
+  <!-- Sketch lines inside -->
+  <line x1="160" y1="160" x2="190" y2="160" stroke="#667eea" stroke-width="2.5" 
+        stroke-linecap="round" opacity="0.8"/>
+  <line x1="160" y1="180" x2="210" y2="180" stroke="#764ba2" stroke-width="2.5" 
+        stroke-linecap="round" opacity="0.8"/>
+  <line x1="160" y1="200" x2="200" y2="200" stroke="#667eea" stroke-width="2.5" 
+        stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- Digital nodes -->
+  <circle cx="200" cy="100" r="4" fill="#667eea"/>
+  <circle cx="280" cy="180" r="4" fill="#764ba2"/>
+  <circle cx="200" cy="268" r="4" fill="#667eea"/>
+  <circle cx="115" cy="180" r="4" fill="#764ba2"/>
+  
+  <!-- Connection lines -->
+  <line x1="200" y1="100" x2="280" y2="180" stroke="#667eea" 
+        stroke-width="1" opacity="0.2" stroke-dasharray="3,3"/>
+  <line x1="280" y1="180" x2="200" y2="268" stroke="#764ba2" 
+        stroke-width="1" opacity="0.2" stroke-dasharray="3,3"/>
+  
+  <!-- Text -->
+  <text x="200" y="340" font-family="'Brush Script MT', cursive" font-size="36" 
+        fill="url(#grad4)" text-anchor="middle" style="font-style: italic;">
+    Future Sketches
+  </text>
+</svg>
